@@ -104,7 +104,7 @@ background-color: #4d2600;
 .
 .bottomnav {
   position: absolute;
-  bottom: 100%;
+  bottom: 100px;
   right: 100px;
 }
 
