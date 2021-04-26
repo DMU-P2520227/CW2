@@ -104,8 +104,8 @@ background-color: #4d2600;
 .
 .bottomnav {
   position: absolute;
-  bottom: 0px;
-  right: 100px;
+  bottom: 120px;
+  right: -30px;
 }
 
 .bottomnav ul li {
