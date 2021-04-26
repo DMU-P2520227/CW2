@@ -49,7 +49,6 @@ ul{
 .nav {
   position: relative;
   display: inline-block;
-  float: right;
   }
 
 /* Dropdown Content (Hidden by Default) */
@@ -102,7 +101,6 @@ ul{
   font-weight: 600;
 }
 
-.
 .bottomnav {
   position: absolute;
   bottom: 100px;
