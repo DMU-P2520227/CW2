@@ -111,7 +111,7 @@ background-color: #4d2600;
 .bottomnav ul li {
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   margin-top: 20px;
 }
 
@@ -127,6 +127,9 @@ background-color: #4d2600;
   margin: 0 10px 0 -78px;
   transform: translateY(-3px);
 }
+
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
