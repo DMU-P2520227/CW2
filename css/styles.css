@@ -228,7 +228,10 @@ background-color: #4d2600;
   width: 100%;
 }
 
-
+video{
+  max-width:100%;
+  height: auto;
+}
 
 
 .container{
