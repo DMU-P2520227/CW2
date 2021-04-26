@@ -49,6 +49,7 @@ cursor: pointer;
 .nav {
 position: relative;
 display: inline-block;
+float: right;
 }
 
 /* Dropdown Content (Hidden by Default) */
