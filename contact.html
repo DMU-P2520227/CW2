@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <!--This is the link to the single sperate css file-->
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: "monospace", sans-serif;
+    }
+  .contact-section{
+    background-color: #8B4513;
+      padding:100px 0;
+  }
+  .contact-section h1{
+    text-align: center;
+    color: #ffffff;
+  }
+  .border{
+    width: 100px;
+    height: 10px;
+    background: #ffffff;
+    margin: 40px auto;
+
+  }
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10 px;
+    overflow: hidden;
+  }
+  textarea. contact-form-text{
+    resize: none;
+    height: 120px;
+
+  }
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin:10px 0;
+    border: 0;
+    background: ##DEB887;
+    padding: 20px 40px;
+    outline: none;
+    color: #4e3418;
+    transition: 0.5;
+  }
+  textarea. contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #DEB887;
+  }
+
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #DEB887;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+  }
+  .contact-form-btn:hover{
+    background: #e6ccb3;
+  }
+
+  </style>
+</head>
+<!--Everything on your page goes here-->
+  <body>
+    <!--Here I have started an unordered list-->
+        <nav class= "nav">
+          <button class="dropbtn"> Menu</button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="home.html"> Home</a></li>
+              <li><a href="portfolio.html">Portfolio<a/></li>
+              <li><a href="contact.html">Contact<a/></li>
+            </ul>
+          </div>
+        </nav>
+        
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <div class="border"></div>
+
+    <form class="contact-section" action="contact.html" method="post">
+      <input type="text" class="contact-form-text" placeholder="Your name">
+      <input type="email" class="contact-form-text" placeholder="Your email">
+      <textarea class="contact-form-text" placeholder="Your message"></textarea>
+      <input type="submit" class="contact-form-btn" value="Send">
+    </form>
+  </div>
+  </body>

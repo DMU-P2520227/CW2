@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <!--This is the link to the single sperate css file-->
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <style>
+  body{
+    background-color: #DEB887;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  /* Style the images inside the grid */
+  .column1 img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .column1 img:hover {
+    opacity: 1;
+  }
+
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container5 {
+    position: relative;
+    display: none;
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  h1{
+    color: #8B4513;
+  }
+
+  </style>
+</head>
+<body>
+  <!--Here I have started an unordered list-->
+      <nav class= "nav">
+        <button class="dropbtn"> Menu</button>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="home.html"> Home</a></li>
+            <li><a href="portfolio.html">Portfolio<a/></li>
+            <li><a href="contact.html">Contact<a/></li>
+          </ul>
+        </div>
+      </nav>
+
+  <h1 style= "text-align:center;","color:brown;" >Portfolio</h1>
+  <h1> Graphic Design <h1>
+    <!-- The grid: four columns -->
+  <div class="row1">
+    <div class="column1">
+      <img src="img/IMG_0080.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/TS.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/Zim.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/IMG_0905.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/IMG_0893.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/IMG_0896 copy.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/pricelist.jpg" onclick="myFunction(this);">
+    </div>
+    <div class="column1">
+      <img src="img/IMG_0892.jpg" onclick="myFunction(this);">
+    </div>
+  </div>
+
+<!-- The expanding image container -->
+<div class="container5">
+<!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+<!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+<!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+<script>
+function myFunction(imgs) {
+var expandImg = document.getElementById("expandedImg");
+var imgText = document.getElementById("imgtext");
+expandImg.src = imgs.src;
+imgText.innerHTML = imgs.alt;
+expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<h1>Videography</h1>
+<section>
+  <div class= "video">
+    <video src="vid/video1.MP4" width="700" height="500" autoplay muted loop></video>
+  </div>
+  <div class="video">
+    <video src ="vid/rxgcity.mp4" width="700" height="500" autoplay muted loop></video>
+  </div>
+  <div class="video">
+    <video src = "vid/nobes.MP4" width="700" height="500" autoplay muted loop></video>
+  </div>
+  <div class="video">
+    <video src="vid/Vixer.MP4"  width="700" height="500" autoplay muted loop></video>
+  </div>
+</section>
+
+
+  <h1> Photography<h1>
+  <div class = "container">
+    <div class= "image">
+      <img src="img/IMG_0880.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_9747.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0883.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0755.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0884.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0889.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0879.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0758.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0866.jpg" alt"">
+    </div>
+    <div class= "image">
+      <img src="img/IMG_0871.jpg" alt"">
+    </div>
+
+
+  <div class = "container2">
+    <div class= "image2">
+      <img src="img/IMG_1108.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_0742.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_1109.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_0731.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_1113.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_1116.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_1117.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_0877.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_1119.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_9736.jpg" alt"">
+    </div>
+    <div class= "image2">
+      <img src="img/IMG_1112.jpg" alt"">
+    </div>
+
+
+    <div class = "container3">
+      <div class= "image3">
+        <img src="img/IMG_1114.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_9730.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_0750.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_9734.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_9736.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_9744.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_4334.jpg" alt"">
+      </div>
+      <div class= "image3">
+        <img src="img/IMG_0736.jpg" alt"">
+      </div>
+
+
+    <div class= "container4">
+      <div class= "image4">
+        <img src="img/IMG_4335.jpg" alt"">
+      </div>
+      <div class= "image4">
+        <img src="img/IMG_0754.jpg" alt"">
+      </div>
+      <div class= "image4">
+        <img src="img/IMG_4333.jpg" alt"">
+      </div>
+      <div class= "image4">
+        <img src="img/IMG_1110.jpg" alt"">
+      </div>
+      <div class= "image4">
+        <img src="img/IMG_0735.jpg" alt"">
+      </div>
+
+</body>
+</html>
