@@ -1,20 +1,22 @@
+/*Add your styles here*/
+
 * {
-  margin: 0;
+  margin: 0; /*the margin code helps keep the menu tab in line and for the text to sit in the middle*/
   padding: 0;
   box-sizing: border-box;
 }
-
+/*this will change the font and its size*/
 body{
   font-family: monospace;
   font-size: 12px;
-  
-
 }
+
+/*this will chnage the background colour of the page and the font*/
 ul{
   list-style: none;
 }
 
-
+/*this section is the CSS coding that changes the background colour of the home page but it will be half half rather than one full colour*/
 .left,
 .right{
   position:absolute;
@@ -149,7 +151,6 @@ ul{
   }
 }
 
-
 .info {
   position: absolute;
   bottom: 0;
@@ -167,13 +168,14 @@ ul{
   font-size: 8px;
   font-weight: 600;
 }
-
+/*This sets the bottom navagation to the bottom of the screen */
 .bottomnav {
   position: absolute;
   bottom: 100px;
   right: 100px;
 }
 
+/*This sets the colour of the text */
 .bottomnav ul li {
   color: #fff;
   text-transform: uppercase;
@@ -181,6 +183,7 @@ ul{
   margin-top: 20px;
 }
 
+/*This section creates a white border on the side so it looks like a menu bar but on the actaul page */
 .bottomnav ul li:nth-child(2) {
   font-weight: bolder;
 }
@@ -198,6 +201,7 @@ ul{
 
 .row {
   display: flex;
+  /*acts like a block element and layout content as if its in a flexbox model*/
   flex-wrap: wrap;
   padding: 0 4px;
 }
@@ -207,7 +211,7 @@ ul{
   flex: 50%;
   padding: 0 4px;
 }
-
+/*This sets space between the images */
 .column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -220,6 +224,7 @@ ul{
   width: 100%;
 }
 
+/*This sets the vdieos to 100% */
 video{
   max-width:100%;
   height: auto;
@@ -243,6 +248,7 @@ img{
   transition: 0.25s ease-in-out;
 }
 
+/*This allows you to hover on top of the image and it will move */
 .image:hover img{
   transform: scale(1.1);
 }
