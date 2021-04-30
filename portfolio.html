@@ -6,6 +6,7 @@
   <!--This is the link to the single sperate css file-->
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <style>
+    /*This section is css codimg within this specific filer*/
   body{
     background-color: #DEB887;
   }
@@ -76,6 +77,7 @@
   </style>
 </head>
 <body>
+  <!--This is the navagation bar-->
   <div class="topnav" id="myTopnav">
     <a href="home.html">Home</a>
     <a href="portfolio.html"class="active">Portfolio</a>
@@ -101,6 +103,8 @@
   <h1 style= "text-align:center;","color:brown;" >Portfolio</h1>
   <h1> Graphic Design <h1>
     <!-- The grid: four columns -->
+    <!--Class is known as a css selector which makes it easier when adding css properities. Mianily focuses on the code which is under that bracket-->
+    <!--ALL <div> elements will be styled equally to the "" style code-->
   <div class="row1">
     <div class="column1">
       <img src="img/IMG_0080.jpg" onclick="myFunction(this);">
@@ -136,9 +140,8 @@
 <!-- Expanded image -->
   <img id="expandedImg" style="width:100%">
 
-<!-- Image text -->
-  <div id="imgtext"></div>
 </div>
+   <!--javascript-->
 <script>
 function myFunction(imgs) {
 var expandImg = document.getElementById("expandedImg");
@@ -154,6 +157,7 @@ expandImg.parentElement.style.display = "block";
 <section>
   <section>
   <div class= "video">
+    <!--This is the code to show a video in html-->
     <video controls>
       <source src="vid/video1.MP4" type= "video/mp4">
       Your browser does not support the video tag.
@@ -270,7 +274,7 @@ expandImg.parentElement.style.display = "block";
         <img src="img/IMG_0736.jpg" alt"">
       </div>
 
-
+<!-- This creates a column for each section of photography-->
     <div class= "container4">
       <div class= "image4">
         <img src="img/IMG_4335.jpg" alt"">
